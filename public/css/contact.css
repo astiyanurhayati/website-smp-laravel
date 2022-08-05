@@ -1,0 +1,132 @@
+main {
+    background-color: #f7faf6;
+    padding-bottom: 50px;
+}
+.alert-success {
+    font-size: 11px;
+    padding: 8px 18px;
+    border: solid 1px green;
+    border-radius: 5px;
+    margin: 0px 10px;
+    color: green;
+    background: #77d37745;
+}
+
+.content-kontak h3 {
+    font-size: 15px;
+    margin-left: 10px;
+}
+.garis {
+    background-color: green;
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    margin-left: 2%;
+}
+
+.content-kontak h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+input[type="text"],
+select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.kontak input,
+textarea {
+    margin: 10px;
+}
+textarea {
+    height: 100px;
+    width: 440px;
+}
+.kontak {
+    display: flex;
+}
+.content-kontak {
+    width: 500px;
+}
+textarea {
+    padding: 12px 20px;
+
+    display: block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 96%;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.content-kontak {
+    border-radius: 5px;
+
+    padding: 20px;
+}
+.content-kontak {
+    background-color: white;
+}
+.kanan .atas {
+    display: block;
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+.contact {
+    display: flex;
+    margin: 50px 10% 0px 10%;
+    gap: 30px;
+}
+.kanan .atas .item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 27px;
+    align-items: center;
+}
+.contact .kanan .atas .item i {
+    padding: 14px;
+    border: solid black 1px;
+    border-radius: 50%;
+}
+.contact .kanan .atas .item p {
+    font-size: 15px;
+}
+
+@media (max-width: 800px) {
+    .contact {
+        flex-wrap: wrap;
+    }
+    .content-kontak {
+        width: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .kontak {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

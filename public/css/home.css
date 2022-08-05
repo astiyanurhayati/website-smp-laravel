@@ -1,0 +1,178 @@
+main .page1 {
+    background-image: url("../img/hua.png");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    margin-top: -50px;
+}
+main .page1 .content-page1 {
+    color: white;
+
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+.page1 .content-page1 h1 {
+    position: relative;
+    transition: 0.3s;
+    animation-name: geser;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.scroll-icon {
+    position: absolute;
+    margin: 20px;
+    width: 20px;
+    height: 40px;
+    border-radius: 2em;
+    border: 1.5px solid rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 auto;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+}
+.scroll-icon span {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    left: 50%;
+    top: 20%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, 0);
+    animation: ex-1-whell 1s ease-in-out infinite;
+}
+@keyframes ex-1-whell {
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 0;
+    }
+    20%,
+    70% {
+        opacity: 1;
+    }
+    90%,
+    100% {
+        transform: translate(-50%, 150%);
+        opacity: 0;
+    }
+}
+
+.page2 .sambutan .kanan img {
+    width: 300px;
+    transition: 0.3s;
+    animation-name: geserkanan;
+    animation-duration: 2s;
+    position: relative;
+}
+.page2 .sambutan {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 50px 10%;
+    gap: 50px;
+}
+#page2 {
+    padding-top: 50px;
+}
+.garisbawah {
+    width: 103px;
+    color: green;
+    background: green;
+    height: 3px;
+    margin-top: 5px;
+    border-radius: 1px;
+    margin-bottom: 30px;
+}
+.page2 .sambutan .kiri p {
+    font-size: 14px;
+}
+.page2 .sambutan .kiri {
+    padding-right: 30px;
+}
+
+@keyframes geser {
+    from {
+        right: 200px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+@keyframes geserkanan {
+    from {
+        left: 200px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+/* PAGE3 */
+.page3 .content-profile .kanan video {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.page3 .profil .content-profile {
+    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.read-more a button {
+    padding: 5px 13px;
+    margin-top: 15px;
+    background: #436547;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.read-more a button:hover {
+    background-color: #37543a;
+}
+
+@media (max-width: 920px) {
+    .page2 .sambutan {
+        display: flex;
+        justify-content: flex-end;
+        align-items: stretch;
+        flex-wrap: wrap;
+        padding: 50px 10%;
+        gap: 50px;
+        flex-direction: column-reverse;
+    }
+    .page3 .profil .content-profile {
+        gap: 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 50px 10%;
+    }
+}
+
+@media (max-width: 800px) {
+}
+@media (max-width: 450px) {
+    .page3 .content-profile .kanan video {
+        width: 300px;
+        border-radius: 10px;
+    }
+    .content-footer .text {
+        width: 340px;
+        font-size: 12px;
+        padding-right: 44px;
+    }
+}

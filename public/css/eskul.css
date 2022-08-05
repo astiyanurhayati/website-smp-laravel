@@ -1,0 +1,21 @@
+.page1 {
+    margin: 50px 10%;
+}
+.page1 .eskul .foto img {
+    border-radius: 3px;
+    width: 400px;
+}
+.eskul .foto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.page1 h2 {
+    margin-bottom: 20px;
+}
+.eskul {
+    margin-top: 40px;
+}
+.eskul .title {
+    margin-bottom: 10px;
+}

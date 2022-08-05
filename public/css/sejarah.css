@@ -1,0 +1,14 @@
+main .content-sejarah {
+    margin: 50px 10%;
+}
+main .content-sejarah img {
+    width: 360px;
+    margin: 0 auto;
+    display: flex;
+}
+main .content-sejarah h2 {
+    margin-bottom: 45px;
+}
+main .content-sejarah .text {
+    margin-top: 20px;
+}

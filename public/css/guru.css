@@ -1,0 +1,24 @@
+main .teachers {
+    margin: 50px 5%;
+}
+.foto img {
+    width: 200px;
+}
+.teacher .judul {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.content-teacher .isi-content {
+    display: flex;
+    gap: 50px;
+    margin: 10px 50px;
+    flex-wrap: wrap;
+}
+svg {
+    width: 15px;
+}
+
+nav.flex.items-center.justify-between {
+    padding-left: 4%;
+}
